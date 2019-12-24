@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/item_round_margin">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_date_time"
+            style="@style/TextStyle.TextNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="0.5"
+            android:gravity="start|center_vertical"
+            android:maxLines="2"
+            android:text="@string/date_time_title" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_date_time_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:boxBackgroundColor="@color/edit_text_bg"
+            app:counterEnabled="false"
+            app:errorEnabled="false"
+            tools:layout_editor_absoluteX="166dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_date_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/edit_text_default_padding"
+                android:elegantTextHeight="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/text_font_size"
+                tools:text="456987" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_description"
+            style="@style/TextStyle.TextNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="0.5"
+            android:gravity="start|center_vertical"
+            android:maxLines="3"
+            android:text="@string/description_title" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/description_input_text_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:boxBackgroundColor="@color/edit_text_bg"
+            app:counterEnabled="false"
+            app:errorEnabled="false" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/edit_text_default_padding"
+                android:elegantTextHeight="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:maxLength="512"
+                android:minHeight="98dp"
+                android:singleLine="false"
+                android:text=" "
+                android:textSize="@dimen/text_font_size"
+                tools:text="Description gggggggggggggggggggggggggggggggggggggggggggggggggggggggggyyyy" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_vehicle_id"
+            style="@style/TextStyle.TextNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="0.5"
+            android:gravity="start|center_vertical"
+            android:maxLines="2"
+            android:text="@string/vehicle_id_title" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/vehicle_input_text_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:boxBackgroundColor="@color/edit_text_bg"
+            app:counterEnabled="false"
+            app:errorEnabled="false"
+            tools:layout_editor_absoluteX="166dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_vehicle_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/edit_text_default_padding"
+                android:elegantTextHeight="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/text_font_size"
+                tools:text="DR586 FPOI" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_entry_weight"
+            style="@style/TextStyle.TextNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="0.5"
+            android:gravity="start|center_vertical"
+            android:maxLines="2"
+            android:text="@string/entry_weight_title" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/entry_input_text_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:boxBackgroundColor="@color/edit_text_bg"
+            app:counterEnabled="false"
+            app:errorEnabled="false"
+            tools:layout_editor_absoluteX="166dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_entry_weight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/edit_text_default_padding"
+                android:elegantTextHeight="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/text_font_size"
+                tools:text="444444" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_exit_weight"
+            style="@style/TextStyle.TextNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="0.5"
+            android:gravity="start|center_vertical"
+            android:maxLines="2"
+            android:text="@string/exit_weight_title" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/exit_input_text_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:boxBackgroundColor="@color/edit_text_bg"
+            app:counterEnabled="false"
+            app:errorEnabled="false"
+            tools:layout_editor_absoluteX="166dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_exit_weight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/edit_text_default_padding"
+                android:elegantTextHeight="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/text_font_size"
+                tools:text="5555555555" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_total_weight"
+            style="@style/TextStyle.TextNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="0.5"
+            android:gravity="start|center_vertical"
+            android:maxLines="2"
+            android:text="@string/total_weight_title" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/total_input_text_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:boxBackgroundColor="@color/edit_text_bg"
+            app:counterEnabled="false"
+            app:errorEnabled="false"
+            tools:layout_editor_absoluteX="166dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_total_weight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/edit_text_default_padding"
+                android:elegantTextHeight="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/text_font_size"
+                tools:text="333333333" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+</LinearLayout>
